@@ -31,19 +31,7 @@ import org.testng.Reporter;
 			
 		}
 		
-		public static void verifyElement(String element)
-		{
-			WebDriverWait wait=new WebDriverWait(driver,10);
-			
-			try
-			{
-				wait.until(ExpectedConditions.titleIs(element));
-				Reporter.log("title matching",true);	
-			}
-			catch(Exception e)
-			{
-				Reporter.log("title not matching",true);
-			}
+		
 			
 		}
 		
